@@ -1,0 +1,13 @@
+Arrays and Slices
+-----------------
+
+1. Collection of objects of the same type T, stored in contiguous memory.
+
+2. Created by usinb brackers [] and length, required at comple time.
+Type signature -> [T; length]
+
+3. Slices are similar but their length is not known at compile time.
+4. Slice is a two-word object; the first word is a pointer to the data, 
+the second word is the length of the slice. 
+5. The word size is the same as usize, determined by the processor architecture, e.g. 64 bits on an x86-64. 
+Slices can be used to borrow a section of an array and have the type signature &[T].
