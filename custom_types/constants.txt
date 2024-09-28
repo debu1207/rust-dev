@@ -1,0 +1,10 @@
+Constants
+---------
+Rust has two different types of constants which can be declared in any 
+scope including global. Both require explicit type annotation:
+
+- const: An unchangeable value
+- static: A possibly mutable variable with 'static' lifetime.
+    The static lifetime is inferred and does not have to e specified.
+    Accessing or modifying a mutable static variable is unsafe.
+
